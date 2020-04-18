@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7029838328.js" crossorigin="anonymous"></script>
+    <title>My people</title>
+</head>
+<body>
+    <script id="people-template" type="text/x-handlebars-template">   
+        {{#each result}}
+            <div class="person" id={{id}}>
+                <div class="name">name: {{name}}</div>
+                <div> {{email}}</div>
+            </div>
+        {{/each}}
+      </script>
+      
+      <div id="peopleContainer"></div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

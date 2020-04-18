@@ -1,0 +1,21 @@
+body{
+    background-color: gray;
+}
+#peopleContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.person{
+    border-radius: 10px;
+    height: 90px;
+    font-family: 'Sriracha', cursive;
+    background-color: indigo;
+    text-align: center;
+}
+.name{
+    margin-top: 4px;
+}
+.person:hover{
+    background-color: khaki;
+}
